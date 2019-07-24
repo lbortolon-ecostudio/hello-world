@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu_1v1_3a"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/tema_legno_1">
+
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+
+        <TableRow>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/x"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/player1_text_input"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Player 1"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:textSize="35dp" />
+
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/o2"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/player2_text_input"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Player 2"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:textSize="35dp"
+                android:paddingLeft="15dp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:text="inizia"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:textSize="25dp"
+        android:onClick="startGame"/>
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="impostazioni"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:textSize="25dp" />
+
+
+</LinearLayout>
